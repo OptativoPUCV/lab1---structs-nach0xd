@@ -151,3 +151,14 @@ exercises.c:94:10: error: ‘cont’ may be used uninitialized in this function 
 cc1: all warnings being treated as errors
 Compilation failed
 36bed33
+Wed 13 Mar 2024 09:08:53 PM UTC: 
+ exercises.c | 8 +++++++-
+ 1 file changed, 7 insertions(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘checkSorted’:
+exercises.c:94:10: error: ‘cont’ may be used uninitialized in this function [-Werror=maybe-uninitialized]
+   94 |   return cont;
+      |          ^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+1bf13a3
