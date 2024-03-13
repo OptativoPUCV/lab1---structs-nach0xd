@@ -41,7 +41,17 @@ los números pares del arreglo original.
 */
 int *filterEvenNumbers(int arr[], int size, int *newSize) { 
   int *nuevoArr = (int *) malloc(size * sizeof(int));
-  
+
+  int cont = 0;
+
+  for (int i = 0; i < size; i++) {
+    if (arr[i] % 2 == 0) {
+      nuevoArr[cont] = arr[i];
+      cont++;
+    }
+  }
+  nuevoArr = (int *) realloc(nuevoArr, cont * sizeof(int));
+  return nuevoArr;
 }
 /*
 Ejercicio 4: Fusión de dos Arreglos Ordenados
