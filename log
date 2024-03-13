@@ -162,3 +162,9 @@ exercises.c:94:10: error: ‘cont’ may be used uninitialized in this function 
 cc1: all warnings being treated as errors
 Compilation failed
 1bf13a3
+Wed 13 Mar 2024 09:09:07 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  0|3
+total_score: 40/70
+381b393
