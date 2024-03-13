@@ -140,3 +140,14 @@ Wed 13 Mar 2024 09:05:39 PM UTC:
  tests:  0|4
 total_score: 30/70
 39d10d7
+Wed 13 Mar 2024 09:06:43 PM UTC: 
+ exercises.c | 8 ++++----
+ 1 file changed, 4 insertions(+), 4 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘checkSorted’:
+exercises.c:94:10: error: ‘cont’ may be used uninitialized in this function [-Werror=maybe-uninitialized]
+   94 |   return cont;
+      |          ^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+36bed33
