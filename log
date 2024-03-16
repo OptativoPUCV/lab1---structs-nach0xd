@@ -277,3 +277,20 @@ Sat 16 Mar 2024 05:21:20 PM UTC:
  tests:  0|1
 total_score: 60/70
 d0e0baf
+Sat 16 Mar 2024 05:23:44 PM UTC: 
+ exercises.c | 16 ++++++++++------
+ 1 file changed, 10 insertions(+), 6 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘checkSorted’:
+exercises.c:103:34: error: expected statement before ‘)’ token
+  103 |     else if (arr[i] < arr[i + 1])) {
+      |                                  ^
+exercises.c:103:5: error: this ‘else’ clause does not guard... [-Werror=misleading-indentation]
+  103 |     else if (arr[i] < arr[i + 1])) {
+      |     ^~~~
+exercises.c:103:36: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘else’
+  103 |     else if (arr[i] < arr[i + 1])) {
+      |                                    ^
+cc1: all warnings being treated as errors
+Compilation failed
+f99d9ea
