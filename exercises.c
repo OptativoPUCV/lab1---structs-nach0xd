@@ -100,7 +100,7 @@ int checkSorted(int arr[], int size) {
         return 0;
       }
     }
-    else if (arr[i] < arr[i + 1])) {
+    else if (arr[i] < arr[i + 1]) {
       if (contador == 1) {
         return 0;
       }
