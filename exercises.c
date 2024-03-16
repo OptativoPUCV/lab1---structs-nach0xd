@@ -104,6 +104,7 @@ int checkSorted(int arr[], int size) {
       if (contador == 1) {
         return 0;
       }
+      else contador = -1;
     }
   }
   return contador;
