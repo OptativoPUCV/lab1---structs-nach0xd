@@ -90,25 +90,21 @@ y luego devuelva 1 si el arreglo está ordenado en orden ascendente,
   0 si no está ordenado, y -1 si está ordenado en orden descendente.
 */
 int checkSorted(int arr[], int size) {
-if (size <= 1) // Si el tamaño del arreglo es 0 o 1, se considera ordenado
-        return 1;
+  int ascendente = 1;
+  int descendente = 1;
 
-    int ascendente = 1;
-    int descendente = 1;
-
-    for (int i = 1; i < size; i++) {
-        if (arr[i - 1] > arr[i]) // Si el elemento actual es menor que el anterior, no está en orden ascendente
-            ascendente = 0;
-        if (arr[i - 1] < arr[i]) // Si el elemento actual es mayor que el anterior, no está en orden descendente
-            descendente = 0;
+  for (int i = 1; i < size; i++) {
+    if (arr[i - 1] > arr[i]){
+      ascendente = 0;
     }
+    if (arr[i - 1] < arr[i]) {
+      descendente = 0;
+    }
+  }
 
-    if (ascendente)
-        return 1;
-    else if (descendente)
-        return -1;
-    else
-        return 0; // Si no está ni en orden ascendente ni en orden descendente, se considera no ordenado
+  if (ascendente == 1) return 1;
+  if (descendente == 1) return -1;
+  return 0; // Si no está ni en orden ascendente ni en orden descendente, se considera no ordenado
 }
 
 
