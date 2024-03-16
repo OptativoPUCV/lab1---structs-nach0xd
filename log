@@ -246,3 +246,17 @@ Sat 16 Mar 2024 05:14:31 PM UTC:
  tests:  0|2
 total_score: 50/70
 a185781
+Sat 16 Mar 2024 05:18:29 PM UTC: 
+ exercises.c | 13 ++++++++++++-
+ 1 file changed, 12 insertions(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘crearListaEnlazada’:
+exercises.c:153:34: error: variable ‘actual’ set but not used [-Werror=unused-but-set-variable]
+  153 |   Nodo *a = NULL, *temp = NULL, *actual = NULL;
+      |                                  ^~~~~~
+exercises.c:165:1: error: control reaches end of non-void function [-Werror=return-type]
+  165 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+c98ed26
