@@ -96,9 +96,6 @@ int checkSorted(int arr[], int size) {
         if (contador == 1) {
           contador = -1;
         }
-        else if (contador == -1) {
-          return 0;
-        }
       }
       else if (arr[i] < arr[i + 1]) {
         if (contador == -1) {
