@@ -104,7 +104,7 @@ int checkSorted(int arr[], int size) {
 
   if (ascendente == 1) return 1;
   if (descendente == 1) return -1;
-  return 0; // Si no está ni en orden ascendente ni en orden descendente, se considera no ordenado
+  return 0;
 }
 
 
