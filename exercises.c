@@ -99,7 +99,7 @@ int cont = 1;
         return 0;   // Ya no está ordenado
       }
     } else if (arr[i] < arr[i + 1] && cont == -1) {
-      return 0;     // Ya no está ordenado
+      cont = 0;     // Ya no está ordenado
     }
   }
   return cont;
