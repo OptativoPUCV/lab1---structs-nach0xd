@@ -90,18 +90,16 @@ y luego devuelva 1 si el arreglo está ordenado en orden ascendente,
   0 si no está ordenado, y -1 si está ordenado en orden descendente.
 */
 int checkSorted(int arr[], int size) {
-  int cont = 1;
+int cont = 1;
   for (int i = 0; i < size - 1; i++) {
     if (arr[i] > arr[i + 1]) {
       if (cont == 1) {
-        cont = -1;
+        cont = -1;  // Cambio de ascendente a descendente
+      } else if (cont == 0) {
+        return 0;   // Ya no está ordenado
       }
-      else if (cont == 0) {
-        return 0;
-      }
-    }
-    else if (arr[i] < arr[i + 1] && cont == -1) {
-      return 0;
+    } else if (arr[i] < arr[i + 1] && cont == -1) {
+      return 0;     // Ya no está ordenado
     }
   }
   return cont;
