@@ -159,7 +159,8 @@ Nodo *crearListaEnlazada(int arr[], int size) {
 
     if (a == NULL) {
       a = temp;
-      actual = a;
     }
+    else actual->siguiente = temp;
+    actual = temp;
   }
 }
